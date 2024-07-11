@@ -1,8 +1,8 @@
 package extractor
 
 import (
-	"Kindle/internal/utils"
 	"context"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 	"github.com/mholt/archiver/v4"
 	"io"
 	"log"

@@ -1,4 +1,4 @@
-module Kindle
+module github.com/Jictyvoo/comic_manga-extractor-Converter
 
 go 1.22
 

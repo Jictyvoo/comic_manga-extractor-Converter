@@ -1,9 +1,9 @@
 package main
 
 import (
-	"Kindle/internal/services/extractor"
 	"flag"
 	"fmt"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/extractor"
 	"log"
 	"os"
 	"path/filepath"
