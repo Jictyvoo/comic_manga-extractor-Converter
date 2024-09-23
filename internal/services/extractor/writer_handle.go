@@ -2,13 +2,15 @@ package extractor
 
 import (
 	"context"
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
-	"github.com/mholt/archiver/v4"
 	"io"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/mholt/archiver/v4"
+
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 )
 
 type (

@@ -3,13 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"strings"
 	"unicode"
+
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 )
 
 const kccScriptPath = "/opt/kcc/kcc-c2e.py"
