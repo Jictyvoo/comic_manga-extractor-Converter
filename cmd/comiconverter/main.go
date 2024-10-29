@@ -10,6 +10,7 @@ import (
 	"strings"
 	"unicode"
 
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 )
 
@@ -42,7 +43,7 @@ func runKccScript(extractDir, outputDir string) {
 
 	cmd := exec.Command(
 		kccScriptPath,
-		"--profile", string(KDeviceKindle11),
+		"--profile", string(deviceprof.DeviceKindle11),
 		"--manga-style", "-q", "--upscale",
 		"--format", `"`+string(FormatMOBIEPUB)+`"`,
 		"--batchsplit", "2",
