@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgcompare"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
 )
 
 func TestStepRescaleImage_PerformExec(t *testing.T) {
 	imgFixtures := ([2]image.Image)(
-		imgcompare.ImageFixtures(2, []byte("TestStepRescaleImage_PerformExec")),
+		imgutils.ImageFixtures(2, []byte("TestStepRescaleImage_PerformExec")),
 	)
 	testCases := []struct {
 		name                  string
@@ -103,7 +103,7 @@ func TestStepRescaleImage_PerformExec(t *testing.T) {
 			}
 
 			result := state.img
-			if !imgcompare.IsImageEqual(result, tCase.expectedImg) {
+			if !imgutils.IsImageEqual(result, tCase.expectedImg) {
 				t.Errorf(
 					"expected: %#v, actual: %#v", tCase.expectedImg, result,
 				)
