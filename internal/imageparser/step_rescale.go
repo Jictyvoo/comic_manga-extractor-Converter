@@ -8,6 +8,8 @@ import (
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 )
 
+var _ PipeStep = (*StepRescaleImage)(nil)
+
 type StepRescaleImage struct {
 	resolution deviceprof.Resolution
 	isPixelArt bool
