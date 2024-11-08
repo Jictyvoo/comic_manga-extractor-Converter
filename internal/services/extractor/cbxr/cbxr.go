@@ -2,14 +2,19 @@ package cbxr
 
 import (
 	"errors"
+	"io"
 	"iter"
 
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
 )
 
 type (
-	FileResult utils.ResultErr[[]byte]
-	FileName   string
+	FileResult        utils.ResultErr[[]byte]
+	FileName          string
+	FileContentStream interface {
+		io.Reader
+		io.ReaderAt
+	}
 )
 
 type Extractor interface {
