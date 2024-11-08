@@ -1,4 +1,4 @@
-package extractor
+package filextract
 
 import (
 	"log"
@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/extractor/cbxr"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/filextract/cbxr"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/outdirwriter"
 )
 
