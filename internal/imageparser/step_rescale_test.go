@@ -7,11 +7,12 @@ import (
 
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils/testimgs"
 )
 
 func TestStepRescaleImage_PerformExec(t *testing.T) {
 	imgFixtures := ([2]image.Image)(
-		imgutils.ImageFixtures(2, []byte("TestStepRescaleImage_PerformExec")),
+		testimgs.ImageFixtures(2, []byte("TestStepRescaleImage_PerformExec")),
 	)
 	testCases := []struct {
 		name                  string
