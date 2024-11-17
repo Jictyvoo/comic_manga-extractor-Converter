@@ -10,8 +10,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 )
 
 const kccScriptPath = "/opt/kcc/kcc-c2e.py"

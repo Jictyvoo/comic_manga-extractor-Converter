@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/imageparser"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/filextract/cbxr"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/outdirwriter"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 )
 
 type (

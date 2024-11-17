@@ -10,9 +10,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/services/filextract"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 )
 
 func main() {

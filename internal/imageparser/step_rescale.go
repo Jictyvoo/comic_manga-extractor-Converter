@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/image/draw"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/deviceprof"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 )
 
 var _ PipeStep = (*StepRescaleImage)(nil)
