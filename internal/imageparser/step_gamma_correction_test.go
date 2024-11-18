@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
 )
 
 func TestStepGammaCorrectionImage_PerformExec(t *testing.T) {

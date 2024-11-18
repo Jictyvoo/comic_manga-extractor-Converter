@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils/testimgs"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils/testimgs"
 )
 
 // TestCropBox tests the CropBox function

@@ -5,7 +5,7 @@ import (
 	"image/color"
 	"image/draw"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
 )
 
 var _ PipeStep = (*StepCropRotateImage)(nil)

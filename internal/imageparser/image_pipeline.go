@@ -4,7 +4,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
 )
 
 type (

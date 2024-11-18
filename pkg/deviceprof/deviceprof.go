@@ -1,6 +1,6 @@
 package deviceprof
 
-import "github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
+import "github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
 
 type (
 	Resolution    struct{ Width, Height uint }

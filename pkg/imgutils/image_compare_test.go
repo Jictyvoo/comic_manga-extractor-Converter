@@ -7,7 +7,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils/testimgs"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils/testimgs"
 )
 
 //go:embed image_compare_test.go

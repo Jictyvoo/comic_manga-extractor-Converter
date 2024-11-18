@@ -5,9 +5,9 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils"
-	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/utils/imgutils/testimgs"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils/testimgs"
 )
 
 func TestStepRescaleImage_PerformExec(t *testing.T) {
