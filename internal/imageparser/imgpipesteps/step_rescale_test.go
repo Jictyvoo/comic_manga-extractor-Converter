@@ -1,10 +1,11 @@
-package imageparser
+package imgpipesteps
 
 import (
 	"image"
 	"image/color"
 	"testing"
 
+	"github.com/Jictyvoo/comic_manga-extractor-Converter/internal/imageparser"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils"
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/imgutils/testimgs"
@@ -95,15 +96,15 @@ func TestStepRescaleImage_PerformExec(t *testing.T) {
 				tCase.expectedImg = mockImage(tCase.targetSize, tCase.fillWith)
 			}
 			var (
-				state = pipeState{img: tCase.inputImg}
-				opts  processOptions
+				state = imageparser.PipeState{Img: tCase.inputImg}
+				opts  imageparser.ProcessOptions
 			)
 
 			if err := step.PerformExec(&state, opts); err != nil {
 				t.Fatalf("%s: PerformExec: %v", tCase.name, err.Error())
 			}
 
-			result := state.img
+			result := state.Img
 			if !imgutils.IsImageEqual(result, tCase.expectedImg) {
 				t.Errorf(
 					"expected: %#v, actual: %#v", tCase.expectedImg, result,
