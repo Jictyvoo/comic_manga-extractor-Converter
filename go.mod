@@ -5,6 +5,7 @@ go 1.23
 require (
 	github.com/mholt/archiver/v4 v4.0.0-alpha.8
 	github.com/pdfcpu/pdfcpu v0.9.1
+	gocv.io/x/gocv v0.39.0
 	golang.org/x/image v0.22.0
 )
 
