@@ -17,18 +17,12 @@ import (
 	"github.com/Jictyvoo/comic_manga-extractor-Converter/pkg/deviceprof"
 )
 
-type (
-	FileInfo struct {
-		CompleteName string
-		BaseName     string
-	}
-	FileProcessorWorker struct {
-		OutputFolder   string
-		FilenameStream chan FileInfo
-		imgPipeline    imageparser.ImagePipeline
-		profile        deviceprof.DeviceProfile
-	}
-)
+type FileProcessorWorker struct {
+	OutputFolder   string
+	FilenameStream chan FileInfo
+	imgPipeline    imageparser.ImagePipeline
+	profile        deviceprof.DeviceProfile
+}
 
 func NewFileProcessorWorker(
 	filenameStream chan FileInfo,
